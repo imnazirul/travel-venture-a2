@@ -298,6 +298,58 @@ main {
 #img-7 {
   grid-area: img-7;
 }
+
+/* why-choose-us-section styles */
+.why-choose-us-section {
+  margin-bottom: 100px;
+}
+.why-choose-us-section > h1 {
+  color: var(--heading-color);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.why-choose-us-section > p {
+  padding: 0 200px;
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  margin-bottom: 40px;
+}
+.row {
+  display: flex;
+  gap: 25px;
+}
+.box {
+  width: 50%;
+  padding: 30px;
+  border-radius: 16px;
+}
+.box h1 {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 30px 0px 10px 0;
+}
+.box p {
+  color: #5a5a5d;
+  line-height: 26px;
+}
+#box-1 {
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+#box-2 {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+#box-3 {
+  margin: 0 auto;
+  margin-top: 25px;
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}
 /* ---------------------
 --------------------
 -----------------------
