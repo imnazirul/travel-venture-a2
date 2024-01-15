@@ -359,7 +359,7 @@ main {
 
 @media screen and (max-width: 600px) {
   header {
-    padding: 20px;
+    padding: 30px;
   }
   nav {
     justify-content: space-between;
@@ -381,10 +381,24 @@ main {
   .dropdown ul {
     display: block;
   }
+
+  /* shared styles starts here */
+  .why-choose-us-section,
+  .destination-section {
+    margin-bottom: 30px;
+  }
+
+  /* header font -size */
+  .destination-section h1,
+  .banner h1,
+  .why-choose-us-section h1 {
+    font-size: 30px;
+  }
+  /* shared styles ends here */
   /* banner styles */
   .banner {
     padding: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
   .find-place {
     flex-direction: column;
@@ -396,11 +410,8 @@ main {
     width: 100%;
   }
 
-  .banner h1 {
-    font-size: 24px;
-  }
   .banner p {
-    font-size: 14px;
+    font-size: 15px;
   }
   main {
     padding: 20px;
@@ -410,7 +421,7 @@ main {
   .popular-tours {
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   .tour-text,
@@ -422,9 +433,7 @@ main {
   }
 
   /* destination styles */
-  .destination-section {
-    margin-bottom: 25px;
-  }
+
   .destination-img {
     gap: 15px;
     grid-template-areas:
@@ -436,12 +445,22 @@ main {
       "img-6"
       "img-7";
   }
+  .destination-section .destination-img .img h3 {
+    font-size: 25px;
+  }
   .destination-img .img img {
     height: 200px;
   }
 
-  .destination-section h1,
-  .destination-section .destination-img .img h3 {
-    font-size: 25px;
+  /* .why-choose-us-section styles */
+
+  .why-choose-us-section p {
+    padding: 0;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .box {
+    width: 100%;
   }
 }
