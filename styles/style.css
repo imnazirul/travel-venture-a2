@@ -66,6 +66,52 @@ nav .logo-text h1 {
 nav .logo-text h1 span {
   color: var(--primary-color);
 }
+
+nav .menu-bar {
+  display: none;
+  position: relative;
+}
+.menu-bar i {
+  font-size: 20px;
+}
+
+/* dropdown styles */
+.dropdown {
+  display: none;
+}
+.menu-bar:hover .dropdown {
+  display: block;
+}
+.dropdown {
+  background: rgba(49, 49, 49, 0.836);
+  position: absolute;
+  border-radius: 5px;
+  top: 30px;
+  right: 20px;
+  padding: 20px 40px;
+}
+.dropdown ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+.dropdown ul li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.dropdown ul li a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+.dropdown ul li a:hover {
+  color: var(--primary-color);
+}
+.dropdown ul li:first-child a {
+  color: var(--primary-color);
+}
 /* banner styles */
 
 .banner {
@@ -75,7 +121,8 @@ nav .logo-text h1 span {
   background-size: cover;
   border-radius: 16px;
   padding: 100px 150px;
-  height: 500px;
+  /* height: 500px; */
+  background-position: center;
   margin-top: 40px;
 }
 
@@ -94,7 +141,8 @@ nav .logo-text h1 span {
   line-height: normal;
 }
 
-/* find-place styles */
+/* find-place styles  */
+
 .find-place {
   padding: 15px;
   display: flex;
@@ -102,7 +150,7 @@ nav .logo-text h1 span {
   gap: 20px;
   background: rgba(255, 255, 255, 0.3);
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 .find-place .input,
@@ -131,4 +179,55 @@ nav .logo-text h1 span {
 }
 .input i {
   color: rgba(19, 19, 24, 0.7);
+}
+
+/* ---------------------
+--------------------
+-----------------------
+----------------------------------------------
+---------------------------------
+------------------------ */
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  nav .logo-text h1 {
+    font-size: 1.5rem;
+  }
+  nav .logo-text {
+    gap: 5px;
+  }
+  nav .logo-text img {
+    width: 35px;
+  }
+  nav ul {
+    display: none;
+  }
+
+  nav .menu-bar,
+  .dropdown ul {
+    display: block;
+  }
+  .banner {
+    padding: 20px;
+  }
+  .find-place {
+    flex-direction: column;
+  }
+
+  .find-place .input,
+  .find-place button {
+    width: 100%;
+  }
+
+  .banner h1 {
+    font-size: 24px;
+  }
+  .banner p {
+    font-size: 14px;
+  }
 }
