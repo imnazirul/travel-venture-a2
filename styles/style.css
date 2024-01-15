@@ -17,8 +17,16 @@
   background: #ff5400;
   color: #fff;
   border: 0;
+  font-size: 17px;
   font-weight: 700;
   padding: 15px 30px;
+  border: 2px solid #ff5400;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  cursor: pointer;
+  color: black;
 }
 
 /* header styles */
@@ -172,6 +180,7 @@ nav .menu-bar {
 .find-place .input input {
   width: 100%;
   height: 100%;
+  font-size: 17px;
   background-color: transparent;
   padding: 5px;
   outline: 0;
@@ -181,6 +190,7 @@ nav .menu-bar {
   color: rgba(19, 19, 24, 0.5);
 }
 .input i {
+  font-size: 17px;
   color: rgba(19, 19, 24, 0.7);
 }
 /* main styles */
@@ -349,6 +359,89 @@ main {
   margin-top: 25px;
   border: 1px solid rgba(233, 68, 68, 0.2);
   background: rgba(233, 68, 68, 0.05);
+}
+
+/* deals-discount section styles */
+.deals-discounts-section {
+  margin-bottom: 100px;
+}
+
+#discount-container-one {
+  background-image: url("../Images/Group\ 39.png");
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#discount-container-two {
+  background-image: url("../Images/Group\ 40.png");
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#discount-container-three {
+  background-image: url("../Images/torronto.jpg");
+  height: 500px;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.discount-container {
+  border-radius: 16px;
+  margin-bottom: 20px;
+  padding: 50px;
+}
+
+.deals-card {
+  width: 50%;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5);
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.8);
+}
+.deals-card .card-header span i {
+  color: var(--primary-color);
+}
+.deals-card .card-header {
+  color: #5a5a5d;
+  margin-bottom: 20px;
+}
+.deals-card .card-header span {
+  margin-right: 20px;
+}
+.deals-card h3 {
+  color: var(--heading-color);
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+.deals-card .card-details {
+  color: #5a5a5d;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.deals-card h4 {
+  color: var(--heading-color);
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+.deals-card h4 > .highlighted-price {
+  color: var(--primary-color);
+}
+.deals-card button {
+  padding: 10px 30px;
 }
 /* ---------------------
 --------------------
