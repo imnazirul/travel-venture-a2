@@ -18,12 +18,14 @@
   color: #fff;
   border: 0;
   font-weight: 700;
-  padding: 1rem;
+  padding: 15px 30px;
 }
 
 /* header styles */
 header {
-  padding: 50px 120px;
+  max-width: 1600px;
+  padding: 50px 120px 0;
+  margin: 0 auto;
 }
 
 /* nav styles */
@@ -115,6 +117,7 @@ nav .menu-bar {
 /* banner styles */
 
 .banner {
+  margin-bottom: 100px;
   background: url("../Images/Group\ 13.png"),
     linear-gradient(180deg, rgba(19, 19, 24, 0.8) 0%, rgba(19, 19, 24, 0) 100%);
   background-blend-mode: overlay;
@@ -150,7 +153,7 @@ nav .menu-bar {
   gap: 20px;
   background: rgba(255, 255, 255, 0.3);
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 .find-place .input,
@@ -180,7 +183,51 @@ nav .menu-bar {
 .input i {
   color: rgba(19, 19, 24, 0.7);
 }
+/* main styles */
+main {
+  max-width: 1600px;
+  padding: 50px 120px;
+  margin: 0 auto;
+}
 
+.popular-tours {
+  display: flex;
+  gap: 80px;
+}
+.tour-text,
+.popular-tours img {
+  width: 50%;
+}
+
+.tour-text h1 {
+  color: var(--heading-color);
+  font-size: 40px;
+  font-weight: 800;
+}
+.tour-text .tour-desc-one {
+  margin: 20px 0;
+}
+.tour-text p {
+  color: rgba(19, 19, 24, 0.7);
+  line-height: 22px;
+}
+.tour-text ul {
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.tour-text ul li {
+  color: rgba(19, 19, 24, 0.7);
+  line-height: 24px;
+}
+
+.tour-text .tour-desc-two {
+  margin-bottom: 30px;
+}
+.tour-text button {
+  font-size: 18px;
+  padding: 10px 30px;
+}
 /* ---------------------
 --------------------
 -----------------------
@@ -217,6 +264,7 @@ nav .menu-bar {
   }
   .find-place {
     flex-direction: column;
+    justify-content: stretch;
   }
 
   .find-place .input,
