@@ -1,0 +1,134 @@
+/* font-family: 'Mulish', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+/* shared styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+:root {
+  --primary-color: #ff5400;
+  --heading-color: #131318;
+}
+.btn-primary {
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  border: 0;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+/* header styles */
+header {
+  padding: 50px 120px;
+}
+
+/* nav styles */
+nav .logo-text {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+}
+nav > ul li {
+  margin-left: 40px;
+}
+nav > ul li a {
+  text-decoration: none;
+  color: #424247;
+  font-size: 18px;
+}
+nav > ul li a:hover {
+  color: var(--primary-color);
+}
+nav > ul li:first-child a {
+  color: var(--primary-color);
+}
+nav .logo-text h1 {
+  color: var(--heading-color);
+  font-size: 36px;
+  font-weight: 800;
+}
+
+nav .logo-text h1 span {
+  color: var(--primary-color);
+}
+/* banner styles */
+
+.banner {
+  background: url("../Images/Group\ 13.png"),
+    linear-gradient(180deg, rgba(19, 19, 24, 0.8) 0%, rgba(19, 19, 24, 0) 100%);
+  background-blend-mode: overlay;
+  background-size: cover;
+  border-radius: 16px;
+  padding: 100px 150px;
+  height: 500px;
+  margin-top: 40px;
+}
+
+.banner h1 {
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+.banner p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1rem;
+  line-height: normal;
+}
+
+/* find-place styles */
+.find-place {
+  padding: 15px;
+  display: flex;
+  border-radius: 8px;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  justify-content: center;
+  align-content: center;
+}
+
+.find-place .input,
+.find-place button {
+  width: 25%;
+}
+
+.find-place .input {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  height: 50px;
+  background: #fff;
+  padding: 10px;
+}
+.find-place .input input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding: 5px;
+  outline: 0;
+  border: 0;
+}
+.find-place .input input::placeholder {
+  color: rgba(19, 19, 24, 0.5);
+}
+.input i {
+  color: rgba(19, 19, 24, 0.7);
+}
