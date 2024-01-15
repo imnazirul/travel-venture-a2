@@ -459,6 +459,46 @@ main {
 .deals-card button {
   padding: 10px 30px;
 }
+
+/* simple-perfect-section styles */
+
+.simple-perfect-section {
+  display: flex;
+  margin-bottom: 100px;
+  gap: 30px;
+}
+.simple-text,
+.simple-perfect-section img {
+  width: 50%;
+}
+.simple-text h1 {
+  color: var(--heading-color);
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.simple-text p {
+  color: #5a5a5d;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.simple-text ul {
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+.simple-text ul li {
+  margin-bottom: 10px;
+  color: #131318;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.simple-text button {
+  margin-top: 10px;
+  padding: 10px 30px;
+}
+
 /* ---------------------
 --------------------
 -----------------------
@@ -501,7 +541,8 @@ main {
   .destination-section h1,
   .banner h1,
   .why-choose-us-section h1,
-  .deals-discounts-section h1 {
+  .deals-discounts-section h1,
+  .simple-text h1 {
     font-size: 30px;
   }
   /* shared styles ends here */
@@ -597,5 +638,17 @@ main {
   }
   .deals-discounts-section p {
     padding: 0px;
+  }
+
+  /* .simple-perfect-section styles */
+
+  .simple-perfect-section {
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+
+  .simple-text,
+  .simple-perfect-section img {
+    width: 100%;
   }
 }
