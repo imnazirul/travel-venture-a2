@@ -365,7 +365,21 @@ main {
 .deals-discounts-section {
   margin-bottom: 100px;
 }
+.deals-discounts-section h1 {
+  color: var(--heading-color);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
 
+.deals-discounts-section > p {
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  line-height: 24px;
+  padding: 0 200px;
+  margin-bottom: 40px;
+}
 #discount-container-one {
   background-image: url("../Images/Group\ 39.png");
   height: 500px;
@@ -416,6 +430,8 @@ main {
 .deals-card .card-header {
   color: #5a5a5d;
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .deals-card .card-header span {
   margin-right: 20px;
@@ -484,7 +500,8 @@ main {
   /* header font -size */
   .destination-section h1,
   .banner h1,
-  .why-choose-us-section h1 {
+  .why-choose-us-section h1,
+  .deals-discounts-section h1 {
     font-size: 30px;
   }
   /* shared styles ends here */
@@ -555,5 +572,30 @@ main {
   }
   .box {
     width: 100%;
+  }
+
+  /* .deals-discounts-section styles */
+
+  .deals-discounts-section {
+    margin-bottom: 30px;
+  }
+  #discount-container-one,
+  #discount-container-two,
+  #discount-container-three {
+    padding: 10px;
+    align-items: end;
+  }
+  .deals-card .card-header {
+    margin-bottom: 10px;
+  }
+  .deals-card h3 {
+    margin-bottom: 15px;
+  }
+  .deals-card {
+    width: 100%;
+    padding: 10px;
+  }
+  .deals-discounts-section p {
+    padding: 0px;
   }
 }
