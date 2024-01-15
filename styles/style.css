@@ -190,9 +190,11 @@ main {
   margin: 0 auto;
 }
 
+/* .popular-tours styles */
 .popular-tours {
   display: flex;
   gap: 80px;
+  margin-bottom: 100px;
 }
 .tour-text,
 .popular-tours img {
@@ -228,6 +230,75 @@ main {
   font-size: 18px;
   padding: 10px 30px;
 }
+
+/* destination section style */
+.destination-section {
+  margin-bottom: 100px;
+}
+.destination-section h1 {
+  color: #131318;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.destination-section p {
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+.destination-img {
+  display: grid;
+  grid-template-areas:
+    "img-1 img-1  img-1 img-2 img-2  img-2"
+    "img-3 img-4  img-4 img-4 img-4 img-5"
+    "img-6 img-6  img-7 img-7 img-7  img-7";
+  gap: 20px;
+}
+
+.destination-img .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.destination-section .destination-img .img {
+  object-fit: cover;
+  position: relative;
+}
+.destination-section .destination-img .img h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+#img-1 {
+  grid-area: img-1;
+}
+#img-2 {
+  grid-area: img-2;
+}
+#img-3 {
+  grid-area: img-3;
+}
+#img-4 {
+  grid-area: img-4;
+}
+#img-5 {
+  grid-area: img-5;
+}
+#img-6 {
+  grid-area: img-6;
+}
+#img-7 {
+  grid-area: img-7;
+}
+
 /* ---------------------
 --------------------
 -----------------------
@@ -261,6 +332,7 @@ main {
   }
   .banner {
     padding: 20px;
+    margin-bottom: 25px;
   }
   .find-place {
     flex-direction: column;
@@ -277,5 +349,21 @@ main {
   }
   .banner p {
     font-size: 14px;
+  }
+  main {
+    padding: 20px;
+  }
+  .popular-tours {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 25px;
+  }
+
+  .tour-text,
+  .popular-tours img {
+    width: 100%;
+  }
+  .tour-text h1 {
+    font-size: 30px;
   }
 }
