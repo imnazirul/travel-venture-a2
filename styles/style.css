@@ -298,7 +298,6 @@ main {
 #img-7 {
   grid-area: img-7;
 }
-
 /* ---------------------
 --------------------
 -----------------------
@@ -330,6 +329,7 @@ main {
   .dropdown ul {
     display: block;
   }
+  /* banner styles */
   .banner {
     padding: 20px;
     margin-bottom: 25px;
@@ -353,6 +353,8 @@ main {
   main {
     padding: 20px;
   }
+
+  /* .popular-tours styles */
   .popular-tours {
     flex-direction: column;
     gap: 40px;
@@ -365,5 +367,29 @@ main {
   }
   .tour-text h1 {
     font-size: 30px;
+  }
+
+  /* destination styles */
+  .destination-section {
+    margin-bottom: 25px;
+  }
+  .destination-img {
+    gap: 15px;
+    grid-template-areas:
+      "img-1"
+      "img-2"
+      "img-3"
+      "img-4"
+      "img-5"
+      "img-6"
+      "img-7";
+  }
+  .destination-img .img img {
+    height: 200px;
+  }
+
+  .destination-section h1,
+  .destination-section .destination-img .img h3 {
+    font-size: 25px;
   }
 }
