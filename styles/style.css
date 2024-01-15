@@ -498,7 +498,82 @@ main {
   margin-top: 10px;
   padding: 10px 30px;
 }
+/* newsletter-section style */
 
+.newsletter-section {
+  display: flex;
+  margin-bottom: 100px;
+  gap: 20px;
+}
+.newsletter-img {
+  width: 60%;
+}
+.newsletter-form {
+  border-radius: 16px;
+  border: 2px solid #ff5400;
+  padding: 30px;
+  width: 40%;
+}
+.newsletter-form h3 {
+  color: #131318;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+.newsletter-form p {
+  color: #5a5a5d;
+  line-height: 22px;
+}
+.newsletter-form hr {
+  margin: 25px 0;
+  height: 1px;
+  background: rgba(19, 19, 24, 0.1);
+}
+.newsletter-form form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.newsletter-form input[type="text"],
+input[type="email"] {
+  width: 100%;
+  border: 0;
+  font-size: 17px;
+  outline: none;
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  height: 50px;
+  margin-bottom: 25px;
+}
+.newsletter-form input[type="submit"] {
+  padding: 10px 30px;
+  height: 50px;
+}
+.newsletter-img {
+  position: relative;
+}
+.offer-card {
+  padding: 20px 50px;
+  border-radius: 16px;
+  text-align: center;
+  position: absolute;
+  bottom: 65px;
+  transform: rotate(-30deg);
+  right: -7px;
+  background: #ff5400;
+}
+
+.offer-card p {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+.offer-card h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
 /* ---------------------
 --------------------
 -----------------------
@@ -543,7 +618,7 @@ main {
   .why-choose-us-section h1,
   .deals-discounts-section h1,
   .simple-text h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   /* shared styles ends here */
   /* banner styles */
@@ -597,7 +672,7 @@ main {
       "img-7";
   }
   .destination-section .destination-img .img h3 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .destination-img .img img {
     height: 200px;
@@ -650,5 +725,34 @@ main {
   .simple-text,
   .simple-perfect-section img {
     width: 100%;
+  }
+
+  /* newsletter-section style */
+  .newsletter-form,
+  .newsletter-img,
+  .newsletter-img img {
+    width: 100%;
+  }
+  .newsletter-section {
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  .offer-card {
+    padding: 10px 20px;
+    border-radius: 16px;
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    transform: rotate(-40deg);
+    right: -7px;
+    background: #ff5400;
+  }
+
+  .offer-card p {
+    font-size: 14px;
+  }
+  .offer-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
   }
 }
