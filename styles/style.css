@@ -189,7 +189,7 @@ nav .menu-bar {
   border: 0;
 }
 .find-place .input input::placeholder {
-  color: rgba(19, 19, 24, 0.5);
+  color: rgba(19, 19, 24, 0.3);
 }
 .input i {
   font-size: 17px;
@@ -258,6 +258,7 @@ main {
   color: rgba(19, 19, 24, 0.7);
   text-align: center;
   line-height: 24px;
+  padding: 0 200px;
   margin-bottom: 40px;
 }
 .destination-img {
@@ -745,6 +746,11 @@ footer .footer-copy {
   text-align: center;
   font-family: Inter;
 }
+
+/* -------------------------------------------- */
+/* --------responsive section styles -----------*/
+/* -------------------------------------------- */
+
 /* -----responsiveness for mobile or small devices--------- */
 
 @media screen and (max-width: 600px) {
@@ -842,6 +848,9 @@ footer .footer-copy {
   .destination-section .destination-img .img h3 {
     font-size: 20px;
   }
+  .destination-section p {
+    padding: 10px;
+  }
   .destination-img .img img {
     height: 200px;
   }
@@ -866,7 +875,7 @@ footer .footer-copy {
   #discount-container-one,
   #discount-container-two,
   #discount-container-three {
-    padding: 10px;
+    padding: 15px;
     align-items: end;
   }
   .deals-card .card-header {
@@ -927,7 +936,9 @@ footer .footer-copy {
   /* .featured-properties-section styles */
   .featured-properties-section {
     margin-bottom: 30px;
+    padding: 5px;
   }
+
   .featured-properties-section .featured-title {
     flex-direction: column;
     gap: 5px;
@@ -941,6 +952,15 @@ footer .footer-copy {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+  .featured-properties-section h1 {
+    font-size: 25px;
+  }
+
+  .featured-properties-section h1,
+  .featured-title,
+  .btn-sp {
+    padding: 10px;
+  }
 
   /* footer styles */
   footer {
@@ -950,10 +970,6 @@ footer .footer-copy {
     margin: 20px 0;
   }
 }
-
-/* -------------------------------------------- */
-/* --------responsive section styles -----------*/
-/* -------------------------------------------- */
 
 /* responsiveness for tablet devices */
 
@@ -1005,7 +1021,7 @@ footer .footer-copy {
     margin-bottom: 50px;
   }
   .find-place {
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: stretch;
   }
 
@@ -1105,6 +1121,11 @@ footer .footer-copy {
 
   .simple-perfect-section {
     margin-bottom: 50px;
+    flex-direction: column;
+  }
+  .simple-perfect-section .simple-text,
+  .simple-perfect-section img {
+    width: 100%;
   }
 
   /* newsletter-section style */
@@ -1114,6 +1135,11 @@ footer .footer-copy {
   }
   .newsletter-section {
     margin-bottom: 50px;
+    flex-direction: column;
+  }
+  .newsletter-section .newsletter-form,
+  .newsletter-section .newsletter-img {
+    width: 100%;
   }
   .offer-card {
     padding: 10px 20px;
