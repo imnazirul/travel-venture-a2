@@ -391,12 +391,12 @@ main {
   margin-bottom: 10px;
 }
 .properties-card .rating-text {
-  color: #00429b;
+  color: #ff5400;
   font-size: 18px;
   font-weight: 700;
 }
 .properties-card .rating-text span {
-  background-color: #00429b;
+  background-color: #ff5400;
   color: #fff;
   font-size: 18px;
   display: inline-block;
@@ -408,7 +408,7 @@ main {
 }
 
 .properties-card .price {
-  color: #00429b;
+  color: #ff5400;
   font-size: 30px;
   font-weight: 800;
   display: flex;
@@ -953,5 +953,209 @@ footer .footer-copy {
   }
   footer hr {
     margin: 20px 0;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  nav .logo-text h1 {
+    font-size: 1.5rem;
+  }
+  nav .logo-text {
+    gap: 5px;
+  }
+  nav .logo-text img {
+    width: 35px;
+  }
+  nav ul {
+    display: none;
+  }
+
+  nav .menu-bar,
+  .dropdown ul {
+    display: block;
+  }
+
+  /* shared styles starts here */
+  .why-choose-us-section,
+  .destination-section {
+    margin-bottom: 50px;
+  }
+
+  /* header font -size */
+  .destination-section h1,
+  .banner h1,
+  .why-choose-us-section h1,
+  .deals-discounts-section h1,
+  .footer-logo h1,
+  .simple-text h1 {
+    font-size: 30px;
+  }
+  /* shared styles ends here */
+  /* banner styles */
+  .banner {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .find-place {
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  .find-place .input,
+  .find-place button {
+    width: 100%;
+  }
+
+  /* .banner p { */
+  /* font-size: 15px; */
+  /* } */
+  main {
+    padding: 20px;
+  }
+
+  /* .popular-tours styles */
+  .popular-tours {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+
+  .tour-text,
+  .popular-tours img {
+    width: 100%;
+  }
+  .tour-text h1 {
+    font-size: 30px;
+  }
+
+  /* destination styles */
+
+  .destination-img {
+    gap: 15px;
+    grid-template-areas:
+      "img-1  img-1  img-2  img-2"
+      "img-3  img-4  img-4  img-4"
+      "img-7  img-7  img-7  img-7"
+      "img-6  img-6  img-5 img-5";
+  }
+  .destination-section .destination-img .img h3 {
+    font-size: 25px;
+  }
+  .destination-img .img img {
+    height: 200px;
+  }
+
+  /* .featured-properties-section styles */
+  .featured-properties-section {
+    margin-bottom: 50px;
+  }
+  .featured-properties-section .featured-title {
+    /* flex-direction: column; */
+    gap: 10px;
+  }
+  .featured-properties-section .btn-sp {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .featured-properties-section .properties-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  /* .why-choose-us-section styles */
+
+  .why-choose-us-section p {
+    padding: 0;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .box {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* .deals-discounts-section styles */
+
+  .deals-discounts-section {
+    margin-bottom: 50px;
+  }
+  /* #discount-container-one, */
+  /* #discount-container-two, */
+  /* #discount-container-three { */
+  /* padding: 10px; */
+  /* justify-content: flex-end; */
+  /*  align-items: end; */
+  /* } */
+  .deals-card .card-header {
+    margin-bottom: 10px;
+  }
+  .deals-card h3 {
+    margin-bottom: 15px;
+  }
+  .deals-card {
+    /* width: 100%; */
+    padding: 10px;
+  }
+  .deals-discounts-section p {
+    padding: 0px;
+  }
+
+  /* .simple-perfect-section styles */
+
+  .simple-perfect-section {
+    margin-bottom: 50px;
+    /* flex-direction: column; */
+  }
+
+  /* .simple-text, */
+  /* .simple-perfect-section img { */
+  /* width: 100%; */
+  /* } */
+
+  /* newsletter-section style */
+  /* .newsletter-form, */
+  /* .newsletter-img, */
+  .newsletter-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .newsletter-section {
+    margin-bottom: 50px;
+    /* flex-direction: column; */
+  }
+  .offer-card {
+    padding: 10px 20px;
+    border-radius: 16px;
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    transform: rotate(-40deg);
+    right: -7px;
+    background: #ff5400;
+  }
+
+  .offer-card p {
+    font-size: 14px;
+  }
+  .offer-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  /* footer styles */
+  footer {
+    padding: 50px;
+  }
+  footer hr {
+    margin: 50px 0;
   }
 }
