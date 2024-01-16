@@ -1,5 +1,7 @@
 /* font-family: 'Mulish', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+/* font-family: 'Inter', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 
 /* shared styles */
 * {
@@ -435,6 +437,9 @@ main {
 }
 .deals-card .card-header span {
   margin-right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .deals-card h3 {
   color: var(--heading-color);
@@ -456,7 +461,8 @@ main {
 .deals-card h4 > .highlighted-price {
   color: var(--primary-color);
 }
-.deals-card button {
+.deals-card button,
+.btn-p {
   padding: 10px 30px;
 }
 
@@ -574,6 +580,59 @@ input[type="email"] {
   font-size: 1.5rem;
   font-weight: 800;
 }
+/* footer styles */
+footer {
+  background: rgba(19, 19, 24, 0.05);
+  padding: 80px 300px;
+}
+.footer-logo {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logo img {
+  width: 40px;
+}
+.footer-logo h1 {
+  color: var(--heading-color);
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.footer-logo h1 span {
+  color: #ff5400;
+}
+
+footer .footer-details {
+  color: #5a5a5d;
+  text-align: center;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+}
+footer .social-icons a {
+  margin-right: 30px;
+}
+footer .social-icons a i {
+  color: #131318;
+  font-size: 24px;
+}
+
+footer hr {
+  margin: 50px;
+  height: 1px;
+  background: rgba(19, 19, 24, 0.1);
+}
+footer .footer-copy {
+  color: #131318;
+  text-align: center;
+  font-family: Inter;
+}
 /* ---------------------
 --------------------
 -----------------------
@@ -583,7 +642,7 @@ input[type="email"] {
 
 @media screen and (max-width: 600px) {
   header {
-    padding: 30px;
+    padding: 20px;
   }
   nav {
     justify-content: space-between;
@@ -624,6 +683,7 @@ input[type="email"] {
   /* banner styles */
   .banner {
     padding: 20px;
+    margin-top: 20px;
     margin-bottom: 30px;
   }
   .find-place {
