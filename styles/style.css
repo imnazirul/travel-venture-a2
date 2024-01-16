@@ -745,12 +745,7 @@ footer .footer-copy {
   text-align: center;
   font-family: Inter;
 }
-/* ---------------------
---------------------
------------------------
-----------------------------------------------
----------------------------------
------------------------- */
+/* -----responsiveness for mobile or small devices--------- */
 
 @media screen and (max-width: 600px) {
   header {
@@ -956,6 +951,12 @@ footer .footer-copy {
   }
 }
 
+/* -------------------------------------------- */
+/* --------responsive section styles -----------*/
+/* -------------------------------------------- */
+
+/* responsiveness for tablet devices */
+
 @media screen and (min-width: 600px) and (max-width: 992px) {
   header {
     padding: 20px;
@@ -1013,9 +1014,6 @@ footer .footer-copy {
     width: 100%;
   }
 
-  /* .banner p { */
-  /* font-size: 15px; */
-  /* } */
   main {
     padding: 20px;
   }
@@ -1088,13 +1086,7 @@ footer .footer-copy {
   .deals-discounts-section {
     margin-bottom: 50px;
   }
-  /* #discount-container-one, */
-  /* #discount-container-two, */
-  /* #discount-container-three { */
-  /* padding: 10px; */
-  /* justify-content: flex-end; */
-  /*  align-items: end; */
-  /* } */
+
   .deals-card .card-header {
     margin-bottom: 10px;
   }
@@ -1113,24 +1105,15 @@ footer .footer-copy {
 
   .simple-perfect-section {
     margin-bottom: 50px;
-    /* flex-direction: column; */
   }
 
-  /* .simple-text, */
-  /* .simple-perfect-section img { */
-  /* width: 100%; */
-  /* } */
-
   /* newsletter-section style */
-  /* .newsletter-form, */
-  /* .newsletter-img, */
   .newsletter-img img {
     width: 100%;
     height: 100%;
   }
   .newsletter-section {
     margin-bottom: 50px;
-    /* flex-direction: column; */
   }
   .offer-card {
     padding: 10px 20px;
